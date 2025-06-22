@@ -1,3 +1,7 @@
+echo "db/data/ib_logfile1" >> .gitignore
+echo "db/data/ib_logfile0" >> .gitignore
+echo "db/data/ibdata1" >> .gitignore
+
 # Laravel specific
 /vendor/
 /node_modules/
