@@ -1,1 +1,2 @@
 echo "db/" >> .gitignore
+echo "src/public/front/images/" >> .gitignore
