@@ -23,3 +23,31 @@ docker-compose.local.yml
 .vscode/
 *.swp
 *~
+
+# Dependencies
+node_modules/
+venv/
+.pnpm-store/
+
+# Database
+*.db
+*.sqlite3
+/data/
+
+# Build files
+dist/
+build/
+*.exe
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# OS/IDE
+.DS_Store
+.idea/
+.vscode/
