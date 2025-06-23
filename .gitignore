@@ -1,2 +1,8 @@
 echo "db/" >> .gitignore
 echo "src/public/front/images/" >> .gitignore
+
+db/
+*.ibd
+*.frm
+*.MYD
+*.MYI
