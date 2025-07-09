@@ -1,0 +1,29 @@
+@startuml
+'// Entity Buku
+entity Buku {
+  + id [PK]
+  --
+  gambar: string
+  judul: string
+  penulis: string
+  genre: enum (non_fiction, fiction)
+  rating: decimal
+  tahun_rilis: integer (default: 2000)
+  api_token: string (unique)
+}
+
+'// Entity Pinjam
+entity Pinjam {
+  + id [PK]
+  --
+  # buku_id [FK]
+  nama_peminjam: string
+  tanggal_pinjam: date
+  tanggal_kembali: date
+  uang_jaminan: decimal
+  status: enum (pending, dipinjam, dikembalikan) (default: pending)
+}
+
+'// Relasi One-to-Many (1 Buku bisa dipinjam berkali-kali)
+Buku ||--o Pinjam : "1 buku → banyak pinjaman"
+@enduml

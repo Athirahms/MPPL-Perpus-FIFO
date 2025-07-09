@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->foreignId('buku_id')->constrained('bukus')->onDelete('cascade');
             $table->string('nama_peminjam');
+            $table->string('kontak_peminjam');
             $table->date('tanggal_pinjam');
             $table->date('tanggal_kembali');
+            $table->integer('uang_jaminan')->default(50000);
             $table->enum('status', ['pending', 'dipinjam', 'dikembalikan'])->default('pending');
             $table->timestamps();
         });

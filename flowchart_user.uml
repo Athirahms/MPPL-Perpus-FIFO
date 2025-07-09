@@ -1,0 +1,19 @@
+@startuml
+start
+
+:User Akses Sistem;
+note right
+  **Tanpa Login**
+  - Hanya melihat UI (daftar buku, dll)
+end note
+
+if (User ingin pinjam buku?) then (Ya)
+  :Ajukan Peminjaman;
+  :Kirim data (nama, buku, dll) ke Admin;
+  :Berikan uang jaminan senilai Rp 50000;
+else (Tidak)
+  stop
+endif
+
+stop
+@enduml

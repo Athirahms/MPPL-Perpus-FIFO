@@ -23,6 +23,9 @@ class BukuResource extends Resource
     {
         return $form
             ->schema([
+                Forms\Components\FileUpload::make('gambar')
+                    ->image()
+                    ->required(),
                 Forms\Components\TextInput::make('judul')
                     ->required()
                     ->maxLength(255),
@@ -36,7 +39,8 @@ class BukuResource extends Resource
                     ->numeric(),
                 Forms\Components\TextInput::make('tahun_rilis')
                     ->required()
-                    ->numeric(),
+                    ->numeric()
+                    ->default(2000),
             ]);
     }
 
@@ -44,6 +48,8 @@ class BukuResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('gambar')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('judul')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('penulis')

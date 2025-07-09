@@ -51,13 +51,13 @@
                         <div class="col-md-6 d-flex">
                             <ul class="list-inline"> <!-- Changed to list-inline -->
                                 <li class="list-inline-item"> <!-- Added list-inline-item -->
-                                    <a href="#"><i class="icon icon-facebook"></i></a>
+                                    <a href="https://www.facebook.com/?locale=id_ID"><i class="icon icon-facebook"></i></a>
                                 </li>
                                 <li class="list-inline-item"> <!-- Added list-inline-item -->
-                                    <a href="#"><i class="icon icon-twitter"></i></a>
+                                    <a href="https://x.com"><i class="icon icon-twitter"></i></a>
                                 </li>
                                 <li class="list-inline-item"> <!-- Added list-inline-item -->
-                                    <a href="#"><i class="icon icon-youtube-play"></i></a>
+                                    <a href="https://www.youtube.com/"><i class="icon icon-youtube-play"></i></a>
                                 </li>
                             </ul>
                         </div>

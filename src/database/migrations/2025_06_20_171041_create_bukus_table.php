@@ -13,11 +13,12 @@ return new class extends Migration
     {
         Schema::create('bukus', function (Blueprint $table) {
             $table->id();
+            $table->string('gambar')->nullable();
             $table->string('judul');
             $table->string('penulis');
             $table->enum('genre', ['non_fiction', 'fiction']);
             $table->decimal('rating');
-            $table->integer('tahun_rilis');
+            $table->integer('tahun_rilis')->default(2000);
             $table->string('api_token')->unique();
             $table->timestamps();
         });

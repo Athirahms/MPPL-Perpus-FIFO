@@ -29,10 +29,17 @@ class PinjamResource extends Resource
                 Forms\Components\TextInput::make('nama_peminjam')
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('kontak_peminjam')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\DatePicker::make('tanggal_pinjam')
                     ->required(),
                 Forms\Components\DatePicker::make('tanggal_kembali')
                     ->required(),
+                Forms\Components\TextInput::make('uang_jaminan')
+                    ->required()
+                    ->numeric()
+                    ->default(50000),
                 Forms\Components\TextInput::make('status')
                     ->required(),
             ]);
@@ -47,11 +54,16 @@ class PinjamResource extends Resource
                     ->sortable(),
                 Tables\Columns\TextColumn::make('nama_peminjam')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('kontak_peminjam')
+                    ->searchable(),
                 Tables\Columns\TextColumn::make('tanggal_pinjam')
                     ->date()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('tanggal_kembali')
                     ->date()
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('uang_jaminan')
+                    ->numeric()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('status'),
                 Tables\Columns\TextColumn::make('created_at')

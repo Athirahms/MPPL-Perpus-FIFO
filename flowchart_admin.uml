@@ -1,0 +1,38 @@
+@startuml
+start
+
+:Admin Login;
+note left
+  **Perlu Login**
+  - Username/Password
+end note
+
+repeat
+  :Admin verifikasi data pinjaman;
+  if (Status = Disetujui?) then (Ya)
+    :Update status jadi "dipinjam";
+    :Berikan tenggat waktu;
+    :Uang jaminan diterima;
+  else (Tidak)
+    :Update status jadi "ditolak/tidak tersedia";
+  endif
+
+  :User mengembalikan buku;
+  :Admin update status jadi "dikembalikan";
+  :Admin mengembalikan unag jaminan;
+
+  :Admin kelola data buku;
+  repeat
+    if (Tambah buku?) then (Ya)
+      :Input data buku baru;
+    else (Tidak)
+      if (Update buku?) then (Ya)
+        :Edit data buku;
+      endif
+    endif
+  repeat while (Admin selesai?) is (Tidak)
+  ->Ya;
+repeat while (Ada transaksi baru?) is (Ya)
+
+stop
+@enduml

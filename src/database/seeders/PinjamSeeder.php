@@ -15,7 +15,7 @@ class PinjamSeeder extends Seeder
      */
     public function run(): void
     {
-        $bukuIds = Buku::pluck('id'); // Ambil semua ID buku
+        /*$bukuIds = Buku::pluck('id'); // Ambil semua ID buku
 
         for ($i = 1; $i <= 50; $i++) {
             $tanggalPinjam = Carbon::now()->subDays(rand(1, 30));
@@ -28,6 +28,6 @@ class PinjamSeeder extends Seeder
                 'tanggal_kembali' => $tanggalKembali,
                 'status' => collect(['pending', 'dipinjam', 'dikembalikan'])->random(),
             ]);
-        }
+        }*/
     }
 }

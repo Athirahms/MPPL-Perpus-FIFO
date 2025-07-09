@@ -88,7 +88,7 @@
 		</div>
 	</section>
 
-    <section id="featured-books" class="py-5 my-5">
+    <section id="featured" name="featured" class="bookshelf py-5 my-5">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-12">

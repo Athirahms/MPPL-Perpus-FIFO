@@ -11,7 +11,7 @@ class PinjamApiController extends Controller
     public function index(Request $request){
         $bukus = $request->get('authenticated_buku');
         $peminjaman = $bukus->pinjam()
-                            ->orderBy('tanggal_pinjam', 'asc') // FIFO
+                            ->orderBy('updated_at', 'asc') // FIFO
                             ->get();
         return response()->json($peminjaman);
     }

@@ -3,3 +3,6 @@ large[[:space:]]file filter=lfs diff=lfs merge=lfs -text
 large[[:space:]]files filter=lfs diff=lfs merge=lfs -text
 *.jpg filter=lfs diff=lfs merge=lfs -text
 *.png filter=lfs diff=lfs merge=lfs -text
+ibdata1 filter=lfs diff=lfs merge=lfs -text
+ib_logfile1 filter=lfs diff=lfs merge=lfs -text
+ib_logfile0 filter=lfs diff=lfs merge=lfs -text

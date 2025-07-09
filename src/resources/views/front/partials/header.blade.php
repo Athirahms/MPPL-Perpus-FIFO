@@ -5,13 +5,13 @@
                 <div class="col-md-6 d-flex">
                     <ul class="list-inline"> <!-- Changed to list-inline -->
                         <li class="list-inline-item"> <!-- Added list-inline-item -->
-                            <a href="#"><i class="icon icon-facebook"></i></a>
+                            <a href="https://www.facebook.com/?locale=id_ID"><i class="icon icon-facebook"></i></a>
                         </li>
                         <li class="list-inline-item"> <!-- Added list-inline-item -->
-                            <a href="#"><i class="icon icon-twitter"></i></a>
+                            <a href="https://x.com"><i class="icon icon-twitter"></i></a>
                         </li>
                         <li class="list-inline-item"> <!-- Added list-inline-item -->
-                            <a href="#"><i class="icon icon-youtube-play"></i></a>
+                            <a href="https://www.youtube.com/"><i class="icon icon-youtube-play"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                                         <li class="{{ request()->routeIs('profile') ? 'active' : '' }}"><a href="{{ route('profile') }}">Profile</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item"><a href="#featured-books" class="nav-link">Featured</a></li>
+                                <li class="menu-item"><a href="#featured" class="nav-link">Featured</a></li>
                                 <li class="menu-item"><a href="#popular-books" class="nav-link">Popular</a></li>
                             </ul>
 
@@ -70,4 +70,5 @@
             </div>
         </div>
     </header>
-</div><!--header-wrap-->
+</div>
+<!--header-wrap-->
